@@ -43,7 +43,7 @@
 }
 
 * body {
-  background-color: #E0E0E0;
+  background-color: #222222;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -109,7 +109,7 @@
 }
 
 * body .projects .projects-row .box {
-  transition: 0.0s ease;
+  transition: 0s ease;
   width: 96px;
   height: 96px;
   margin: 2px;
@@ -117,6 +117,8 @@
 
 * body .projects .projects-row .box:hover {
   cursor: pointer;
+  transform: scale(1.5);
+  z-index: 3;
 }
 
 * body .projects .projects-row .box p {
@@ -134,8 +136,14 @@
   left: calc(50% - 150px);
   height: 300px;
   width: 300px;
-  transition: 1s ease;
+  transition: 0s ease;
   z-index: 4;
+}
+
+* body .projects .projects-row .center:hover {
+  cursor: pointer;
+  transform: scale(1);
+  z-index: 3;
 }
 
 * body .technology .technology-row .box {
