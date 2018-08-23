@@ -15,7 +15,7 @@
   -moz-box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.75);
   z-index: 2;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 
 .position-edit, * body .first, * body .second, * body .about, * body .projects, * body .technology, * body .contact {
@@ -24,7 +24,7 @@
   left: calc(50% - 150px);
   height: 300px;
   width: 300px;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 
 .row-edit, * body .second .second-row, * body .projects .projects-row, * body .technology .technology-row {
@@ -52,7 +52,7 @@
 * body .hide {
   height: 0;
   opacity: 0;
-  transition: 2s ease;
+  transition: 1s ease;
   z-index: 0;
 }
 
@@ -109,6 +109,7 @@
 }
 
 * body .projects .projects-row .box {
+  transition: 0.0s ease;
   width: 96px;
   height: 96px;
   margin: 2px;
@@ -133,7 +134,7 @@
   left: calc(50% - 150px);
   height: 300px;
   width: 300px;
-  transition: 2s ease;
+  transition: 1s ease;
   z-index: 4;
 }
 
@@ -152,7 +153,6 @@
 * body .technology .technology-row .box img {
   width: 50px;
   height: 50px;
-  transition: 1s ease;
 }
 
 * body .contact .box {
