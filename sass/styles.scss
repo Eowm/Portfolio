@@ -120,7 +120,7 @@
                 width: 96px;
                 height: 96px;
                 margin: 2px;
-                transition: 0s ease;
+                transition: 1s ease;
                 h1{
                     font-size: 7px;
                 }
@@ -191,8 +191,7 @@
                     cursor: pointer;
                 }
                 img{
-                    width: 50px;
-                    height: 50px;
+                    max-width: 65px;
                 }
                 }
             }
@@ -217,6 +216,10 @@
                             cursor: pointer;
                         }
                     }
+                    .form-row{
+                        textarea{
+                            padding: 10px;
+                        }
                     .form-message{
                         width: 250px;
                         height: 100px;
@@ -225,6 +228,11 @@
                             border: 1px solid #00FF00;
                         }
                     }
+                    }
+                    .form-row{
+                        input{
+                            padding: 0 10px;
+                        }
                     .form-email{
                         width: 250px;
                         &:focus{
@@ -232,6 +240,11 @@
                             border: 1px solid #00FF00;
                         }
                     }
+                    }
+                    .form-row{
+                        input{
+                            padding: 0 10px;
+                        }
                     .form-name{
                         width: 250px;
                         &:focus{
@@ -239,10 +252,12 @@
                             border: 1px solid #00FF00;
                         }
                     }
+                }
                     button{
                         width: 100px;
                         margin-bottom: 10px;
-                        background-color: #E0E0E0;
+                        background-color: #ACAFFF;
+                        color: #2d2640;
                         border: none;
                         height: 20px;
                         &:hover{
@@ -252,6 +267,40 @@
                     }
             }
         }
-        
+        .projectBox{
+            @extend .position-edit;
+            .box{
+                @extend .box-edit;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    .arrowLeft {
+                        position: absolute;
+                        top: 5%;
+                        left:5%;
+                        font-size:30px;
+                        &:hover {
+                            transform: scale(1.5);
+                            z-index:3;
+                         cursor: pointer;
+                        }
+                    }
+                img{
+                    height: 200px;
+                    width: 150px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        border: 5px solid #ACAFFF;
+                    }
+                }
+                h1{
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }

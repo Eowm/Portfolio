@@ -1,4 +1,4 @@
-.box-edit, * body .first .box, * body .second .second-row .box, * body .about .box, * body .projects .projects-row .box, * body .technology .technology-row .box, * body .contact .box {
+.box-edit, * body .first .box, * body .second .second-row .box, * body .about .box, * body .projects .projects-row .box, * body .technology .technology-row .box, * body .contact .box, * body .projectBox .box {
   position: relative;
   text-align: center;
   display: flex;
@@ -17,7 +17,7 @@
   transition: 1s ease;
 }
 
-.position-edit, * body .first, * body .second, * body .about, * body .projects, * body .technology, * body .contact {
+.position-edit, * body .first, * body .second, * body .about, * body .projects, * body .technology, * body .contact, * body .projectBox {
   position: absolute;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
@@ -111,7 +111,7 @@
   width: 96px;
   height: 96px;
   margin: 2px;
-  transition: 0s ease;
+  transition: 1s ease;
 }
 
 * body .projects .projects-row .box h1 {
@@ -193,8 +193,7 @@
 }
 
 * body .technology .technology-row .box img {
-  width: 50px;
-  height: 50px;
+  max-width: 65px;
 }
 
 * body .contact .box {
@@ -219,30 +218,42 @@
   cursor: pointer;
 }
 
-* body .contact .box .form-message {
+* body .contact .box .form-row textarea {
+  padding: 10px;
+}
+
+* body .contact .box .form-row .form-message {
   width: 250px;
   height: 100px;
 }
 
-* body .contact .box .form-message:focus {
+* body .contact .box .form-row .form-message:focus {
   outline: none;
   border: 1px solid #00FF00;
 }
 
-* body .contact .box .form-email {
+* body .contact .box .form-row input {
+  padding: 0 10px;
+}
+
+* body .contact .box .form-row .form-email {
   width: 250px;
 }
 
-* body .contact .box .form-email:focus {
+* body .contact .box .form-row .form-email:focus {
   outline: none;
   border: 1px solid #00FF00;
 }
 
-* body .contact .box .form-name {
+* body .contact .box .form-row input {
+  padding: 0 10px;
+}
+
+* body .contact .box .form-row .form-name {
   width: 250px;
 }
 
-* body .contact .box .form-name:focus {
+* body .contact .box .form-row .form-name:focus {
   outline: none;
   border: 1px solid #00FF00;
 }
@@ -250,13 +261,52 @@
 * body .contact .box button {
   width: 100px;
   margin-bottom: 10px;
-  background-color: #E0E0E0;
+  background-color: #ACAFFF;
+  color: #2d2640;
   border: none;
   height: 20px;
 }
 
 * body .contact .box button:hover {
   cursor: pointer;
+}
+
+* body .projectBox .box {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+* body .projectBox .box .arrowLeft {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 30px;
+}
+
+* body .projectBox .box .arrowLeft:hover {
+  transform: scale(1.5);
+  z-index: 3;
+  cursor: pointer;
+}
+
+* body .projectBox .box img {
+  height: 200px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+* body .projectBox .box img:hover {
+  border: 5px solid #ACAFFF;
+}
+
+* body .projectBox .box h1 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+* body .projectBox .box p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */

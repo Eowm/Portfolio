@@ -9,72 +9,96 @@ var technologyLeft = document.getElementById('technology-left');
 var constactRight = document.getElementById('contact-right');
 var contactLeft = document.getElementById('contact-left');
 
-//var boxes = document.querySelectorAll('.box1');
-
-/*for(let i=0; i<boxes.length; i++) {
-    box[i].document.getElementById('click', event =>{
-        event.preventDefault;
-        changePosition('.box[i]');
-});
-}*/
-
-var box1 = document.getElementById('box1');
-var box2 = document.getElementById('box2');
-var box3 = document.getElementById('box3');
-var box4 = document.getElementById('box4');
-var box5 = document.getElementById('box5');
-var box6 = document.getElementById('box6');
-var box7 = document.getElementById('box7');
-var box8 = document.getElementById('box8');
 
 
-var changePosition = box => {
-    document.querySelector(box).classList.toggle('center');
+
+var projectLeft = document.querySelectorAll('.project-left');
+
+for(let i =0; i< projectLeft.length; i++) {
+    projectLeft[i].addEventListener('click', event => {
+        projectLeft[i].parentElement.parentElement.classList.add('hide');
+        projectsDisplay('.projects');
+    })
 }
+
+
+
+var projectOne = document.getElementById('box1');
+var projectTwo = document.getElementById('box2');
+var projectThree = document.getElementById('box3');
+var projectFour = document.getElementById('box4');
+var projectFive = document.getElementById('box5');
+var projectSix = document.getElementById('box6');
+var projectSeven = document.getElementById('box7');
+var projectEight = document.getElementById('box8');
+
+/*
+var project = document.querySelectorAll('.project');
+for(let i = 0; i< project.length; i++){
+    project[i].addEventListener('click', event => {
+        project[i].parentElement.parentElement.classList.add('hide');
+        projectsDisplay('.'project[i])
+    })
+}
+*/
 
 var addDisplay = (hide, show) => {
     document.querySelector(hide).classList.add('hide')
     document.querySelector(show).classList.remove('hide');
 }
 
-  
-box1.addEventListener('click', event => {
+var projectsDisplay = (show) => {
+    document.querySelector(show).classList.remove('hide')
+}
+
+
+
+
+
+projectOne.addEventListener('click', event => {
     event.preventDefault;
-    changePosition('#box1');
+    addDisplay('.projects', '.projectOne');
 })
 
-box2.addEventListener('click', event => {
+projectTwo.addEventListener('click', event => {
     event.preventDefault;
-    changePosition('#box2');
+    addDisplay('.projects', '.projectTwo');
 })
 
-box3.addEventListener('click', event => {
+projectThree.addEventListener('click', event => {
     event.preventDefault;
-    changePosition('#box3');
+    addDisplay('.projects', '.projectThree');
 })
 
-box4.addEventListener('click', event => {
+projectFour.addEventListener('click', event => {
     event.preventDefault;
-    changePosition('#box4');
-})
-box5.addEventListener('click', event => {
-    event.preventDefault;
-    changePosition('#box5');
+    addDisplay('.projects', '.projectFour');
 })
 
-box6.addEventListener('click', event => {
+projectFive.addEventListener('click', event => {
     event.preventDefault;
-    changePosition('#box6');
-})
-box7.addEventListener('click', event => {
-    event.preventDefault;
-    changePosition('#box7');
+    addDisplay('.projects', '.projectFive');
 })
 
-box8.addEventListener('click', event => {
+projectSix.addEventListener('click', event => {
     event.preventDefault;
-    changePosition('#box8');
+    addDisplay('.projects', '.projectSix');
 })
+
+projectSeven.addEventListener('click', event => {
+    event.preventDefault;
+    addDisplay('.projects', '.projectSeven');
+})
+
+projectEight.addEventListener('click', event => {
+    event.preventDefault;
+    addDisplay('.projects', '.projectEight');
+})
+
+
+
+
+
 
 
 firstRight.addEventListener('click', event => {
