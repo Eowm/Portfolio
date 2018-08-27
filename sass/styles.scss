@@ -137,6 +137,9 @@
                     z-index: 3;
                     }
                 }
+                .arrowLeft{
+                    font-size: 30px;
+                }
                 .center{
                     position: absolute;
                     top: calc(50% - 200px);
@@ -174,6 +177,7 @@
         }
         .technology{
             @extend .position-edit;
+            font-size: 30px;
             .technology-row{
                 @extend .row-edit;
                 .box{
