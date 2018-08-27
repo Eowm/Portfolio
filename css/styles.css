@@ -154,7 +154,7 @@
 }
 
 * body .projects .projects-row .center img:hover {
-  border: 5px solid green;
+  border: 5px solid #ACAFFF;
 }
 
 * body .projects .projects-row .center h1 {
