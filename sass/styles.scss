@@ -48,7 +48,13 @@
             opacity: 0;
             transition: 1s ease;
             z-index: 0;
+                img {
+                    display: none;
+                }
         } 
+        .hide-img {
+            display: none;
+        }
         .first{
             @extend .position-edit;
             .box{
@@ -79,7 +85,8 @@
                 height: 221px;
                 margin: 2px;
                     &:hover{
-                        transform: scale(1.5);
+                        transition: 1s ease;
+                        transform: scale(1.2) rotate(360deg);
                         z-index:3;
                         cursor: pointer
                     }
@@ -134,7 +141,7 @@
                 }
                 &:hover{
                     cursor: pointer;
-                    transform: scale(1.5);
+                    transform: scale(1.5) rotate(360deg);
                     z-index: 3;
                     }
                 }
@@ -154,7 +161,7 @@
                 height: 108px;
                 margin: 2px;
                 &:hover{
-                    transform: scale(1.5);
+                    transform: scale(1.5) rotate(360deg);
                     z-index:3;
                     cursor: pointer;
                 }
@@ -233,7 +240,7 @@
                         }
 
                     }
-            }
+                }
         }
         .projectBox{
             @extend .position-edit;
@@ -249,7 +256,7 @@
                         font-size:30px;
                         &:hover {
                             transform: scale(1.5);
-                            z-index:3;
+                            z-index:1;
                          cursor: pointer;
                         }
                     }
@@ -271,8 +278,6 @@
             }
         }
     }
-    
-    
 }
 
 @media (max-width: 768px) {

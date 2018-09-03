@@ -55,6 +55,14 @@
   z-index: 0;
 }
 
+* body .hide img {
+  display: none;
+}
+
+* body .hide-img {
+  display: none;
+}
+
 * body .first .box h1 {
   padding: 10%;
   font-size: 2rem;
@@ -79,7 +87,8 @@
 }
 
 * body .second .second-row .box:hover {
-  transform: scale(1.5);
+  transition: 1s ease;
+  transform: scale(1.2) rotate(360deg);
   z-index: 3;
   cursor: pointer;
 }
@@ -130,7 +139,7 @@
 
 * body .projects .projects-row .box:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.5) rotate(360deg);
   z-index: 3;
 }
 
@@ -149,7 +158,7 @@
 }
 
 * body .technology .technology-row .box:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) rotate(360deg);
   z-index: 3;
   cursor: pointer;
 }
@@ -248,7 +257,7 @@
 
 * body .projectBox .box .arrowLeft:hover {
   transform: scale(1.5);
-  z-index: 3;
+  z-index: 1;
   cursor: pointer;
 }
 

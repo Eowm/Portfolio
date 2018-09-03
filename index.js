@@ -23,6 +23,8 @@ for(let i =0; i< projectLeft.length; i++) {
 
 
 
+
+
 var projectOne = document.getElementById('box1');
 var projectTwo = document.getElementById('box2');
 var projectThree = document.getElementById('box3');
