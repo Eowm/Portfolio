@@ -185,8 +185,8 @@
 }
 
 * body .contact .box .form-row .form-message {
-  width: 250px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
 }
 
 * body .contact .box .form-row .form-message:focus {
@@ -199,7 +199,7 @@
 }
 
 * body .contact .box .form-row .form-email {
-  width: 250px;
+  width: 300px;
 }
 
 * body .contact .box .form-row .form-email:focus {
@@ -212,7 +212,7 @@
 }
 
 * body .contact .box .form-row .form-name {
-  width: 250px;
+  width: 300px;
 }
 
 * body .contact .box .form-row .form-name:focus {
