@@ -8,8 +8,8 @@
     justify-content: center;
     background-color: hsl(256, 26%, 20%);
     color: #ACAFFF;
-    width: 296px;
-    height: 296px;
+    width: 450px;
+    height: 450px;
     -webkit-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
@@ -19,10 +19,10 @@
 
 .position-edit{
     position: absolute;
-    top: calc(50% - 150px);
-    left: calc(50% - 150px);
-    height: 300px;
-    width: 300px;
+    top: calc(50% - 225px);
+    left: calc(50% - 225px);
+    height: 450px;
+    width: 450px;
     transition: 1s ease;
 }
 
@@ -75,8 +75,8 @@
                 @extend .row-edit;
                 .box{
                     @extend .box-edit;
-                width: 146px;
-                height: 146px;
+                width: 221px;
+                height: 221px;
                 margin: 2px;
                     &:hover{
                         transform: scale(1.5);
@@ -117,19 +117,20 @@
                 @extend .row-edit;
                 .box {
                 @extend .box-edit;
-                width: 96px;
-                height: 96px;
+                justify-content: space-around;
+                width: 146px;
+                height: 146px;
                 margin: 2px;
                 transition: 1s ease;
                 h1{
-                    font-size: 7px;
+                    font-size: 14px;
                 }
                 p{
-                    font-size: 5px;
+                    font-size: 7px;
                 }
                 img{
-                    width: 40px;
-                    height: 55px;
+                    width: 90px;
+                    height: 110px;
                 }
                 &:hover{
                     cursor: pointer;
@@ -140,39 +141,6 @@
                 .arrowLeft{
                     font-size: 30px;
                 }
-                .center{
-                    position: absolute;
-                    top: calc(50% - 200px);
-                    left: calc(50% - 200px);
-                    height: 400px;
-                    width: 400px;
-                    transition: 0s ease;
-                    z-index: 4;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: space-between;
-                    justify-content: space-between;
-                    img{
-                        height: 260px;
-                        width: 200px;
-                        margin-bottom: 10px;
-                        &:hover {
-                            border: 5px solid #ACAFFF;
-                        }
-                    }
-                    h1{
-                        margin-top: 10px;
-                        font-size: 25px;
-                    }
-                    p{
-                        font-size: 20px;
-                    }
-                    &:hover{
-                        cursor: pointer;
-                        transform: scale(1);
-                        z-index: 3;
-                    }
-                }
             }
         }
         .technology{
@@ -182,8 +150,8 @@
                 @extend .row-edit;
                 .box{
                 @extend .box-edit;
-                width: 71px;
-                height: 71px;
+                width: 108px;
+                height: 108px;
                 margin: 2px;
                 &:hover{
                     transform: scale(1.5);
@@ -191,7 +159,7 @@
                     cursor: pointer;
                 }
                 img{
-                    max-width: 65px;
+                    max-width: 100px;
                 }
                 }
             }
@@ -286,8 +254,8 @@
                         }
                     }
                 img{
-                    height: 200px;
-                    width: 150px;
+                    height: 300px;
+                    width: 240px;
                     margin-bottom: 10px;
                     &:hover {
                         border: 5px solid #ACAFFF;
@@ -303,4 +271,141 @@
             }
         }
     }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .box-edit{
+        width: 300px;
+        height: 300px;
+    }
+    .position-edit{
+        top: calc(50% - 150px);
+        left: calc(50% - 150px);
+        height: 300px;
+        width: 300px;
+    }
+    *{
+        body{
+            .first{
+                .box{
+                    .arrowRight{
+                        font-size:30px;
+                    }
+                }
+            }
+            .second{
+                .second-row{
+                    .box{
+                    width: 146px;
+                    height: 146px;
+                        .arrowLeft {
+                            font-size:30px;
+                        }
+                    }
+                }
+            }
+            .about {
+                .box{
+                    .arrowLeftBig {
+                        font-size: 80px;
+                    }
+                }
+            }
+            .projects{
+                .projects-row{
+                    .box {
+                    width: 96px;
+                    height: 96px;
+                    h1{
+                        font-size: 8px;
+                    }
+                    p{
+                        font-size: 5px;
+                    }
+                    img{
+                        width: 50px;
+                        height: 65px;
+                    }
+                    }
+                    .arrowLeft{
+                        font-size: 30px;
+                    }
+                }
+            }
+            .technology{
+                font-size: 30px;
+                .technology-row{
+                    .box{
+                    width: 71px;
+                    height: 71px;
+                    img{
+                        max-width: 60px;
+                    }
+                    }
+                }
+            }
+            .contact{
+                    .box{
+                        .arrowLeftBig {
+                            font-size: 30px;
+                        }
+                        .form-row{
+                            textarea{
+                                padding: 10px;
+                            }
+                        .form-message{
+                            width: 250px;
+                            height: 100px;
+                            }
+                        }
+                        .form-row{
+                            input{
+                                padding: 0 10px;
+                            }
+                        .form-email{
+                            width: 250px;
+                            }
+                        }
+                        .form-row{
+                            input{
+                                padding: 0 10px;
+                            }
+                        .form-name{
+                            width: 250px;
+                        }
+                    }
+                        button{
+                            width: 100px;
+                            margin-bottom: 10px;
+                            height: 20px;
+    
+                        }
+                }
+            }
+            .projectBox{
+                .box{
+                        .arrowLeft {
+                            font-size:30px;
+                        }
+                    img{
+                        height: 200px;
+                        width: 140px;
+                        margin-bottom: 10px;
+                    }
+                    h1{
+                        margin-top: 10px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
 }
