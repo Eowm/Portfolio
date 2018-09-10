@@ -10,6 +10,16 @@ var constactRight = document.getElementById('contact-right');
 var contactLeft = document.getElementById('contact-left');
 
 
+var projectOne = document.getElementById('box1');
+var projectTwo = document.getElementById('box2');
+var projectThree = document.getElementById('box3');
+var projectFour = document.getElementById('box4');
+var projectFive = document.getElementById('box5');
+var projectSix = document.getElementById('box6');
+var projectSeven = document.getElementById('box7');
+var projectEight = document.getElementById('box8');
+
+
 
 
 var projectLeft = document.querySelectorAll('.project-left');
@@ -22,17 +32,6 @@ for(let i =0; i< projectLeft.length; i++) {
 }
 
 
-
-
-
-var projectOne = document.getElementById('box1');
-var projectTwo = document.getElementById('box2');
-var projectThree = document.getElementById('box3');
-var projectFour = document.getElementById('box4');
-var projectFive = document.getElementById('box5');
-var projectSix = document.getElementById('box6');
-var projectSeven = document.getElementById('box7');
-var projectEight = document.getElementById('box8');
 
 /*
 var project = document.querySelectorAll('.project');
@@ -54,8 +53,20 @@ var projectsDisplay = (show) => {
 }
 
 
+/*const hiding = (event, selector) => {
+    event.preventDefault;
+    addDisplay('.projects', selector)
+} 
 
-
+projectOne.addEventListener('click', hiding(event, '.projectOne'));
+projectOne.addEventListener('click', hiding(event, '.projectTwo'));
+projectOne.addEventListener('click', hiding(event, '.projectThree'));
+projectOne.addEventListener('click', hiding(event, '.projectFour'));
+projectOne.addEventListener('click', hiding(event, '.projectFive'));
+projectOne.addEventListener('click', hiding(event, '.projectSix'));
+projectOne.addEventListener('click', hiding(event, '.projectSeven'));
+projectOne.addEventListener('click', hiding(event, '.project'));
+*/
 
 projectOne.addEventListener('click', event => {
     event.preventDefault;
@@ -96,10 +107,6 @@ projectEight.addEventListener('click', event => {
     event.preventDefault;
     addDisplay('.projects', '.projectEight');
 })
-
-
-
-
 
 
 

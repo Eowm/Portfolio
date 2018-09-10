@@ -88,7 +88,7 @@
 
 * body .second .second-row .box:hover {
   transition: 1s ease;
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2);
   z-index: 3;
   cursor: pointer;
 }
@@ -98,11 +98,22 @@
   top: 10%;
   left: 10%;
   font-size: 30px;
+  z-index: 100;
 }
 
 * body .second .second-row .box .arrowLeft:hover {
   transform: scale(1.5);
   cursor: pointer;
+}
+
+* body .about .box {
+  justify-content: space-around;
+}
+
+* body .about .box p {
+  padding: 20px;
+  width: 70%;
+  font-size: 18px;
 }
 
 * body .about .box .arrowLeftBig {

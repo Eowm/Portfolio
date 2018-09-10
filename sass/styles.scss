@@ -86,7 +86,7 @@
                 margin: 2px;
                     &:hover{
                         transition: 1s ease;
-                        transform: scale(1.2) rotate(360deg);
+                        transform: scale(1.2);
                         z-index:3;
                         cursor: pointer
                     }
@@ -95,6 +95,7 @@
                         top: 10%;
                         left:10%;
                         font-size:30px;
+                        z-index: 100;
                         &:hover {
                             transform: scale(1.5);
                          cursor: pointer;
@@ -107,6 +108,12 @@
             @extend .position-edit;
             .box{
                 @extend .box-edit;
+                justify-content: space-around;
+                p{
+                    padding: 20px;
+                    width: 70%;
+                    font-size: 18px;
+                }
                 .arrowLeftBig {
                     position: absolute;
                     top: 5%;
