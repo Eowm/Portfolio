@@ -116,7 +116,7 @@ firstRight.addEventListener('click', event => {
 })
 
 firstLeft.addEventListener('click', event => {
-    event.preventDefault();
+    event.stopPropagation();
     addDisplay('.second', '.first');
 })
 

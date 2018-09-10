@@ -88,7 +88,6 @@
 
 * body .second .second-row .box:hover {
   transition: 1s ease;
-  transform: scale(1.2);
   z-index: 3;
   cursor: pointer;
 }
@@ -102,7 +101,6 @@
 }
 
 * body .second .second-row .box .arrowLeft:hover {
-  transform: scale(1.5);
   cursor: pointer;
 }
 
