@@ -92,9 +92,9 @@
                     }
                     .arrowLeft {
                         position: absolute;
-                        top: 10%;
-                        left:10%;
-                        font-size:30px;
+                        top: 5%;
+                        left: 5%;
+                        font-size: 30px;
                         z-index: 100;
                         &:hover {
                             transform: scale(1.5);
@@ -115,11 +115,12 @@
                 p{
                     font-size: 18px;
                 }
-                .arrowLeftBig {
+                .arrowLeft {
                     position: absolute;
                     top: 5%;
                     left: 5%;
-                    font-size: 80px;
+                    font-size: 30px;
+                    z-index: 200;
                     &:hover {
                         cursor: pointer;
                     }

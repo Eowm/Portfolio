@@ -69,42 +69,42 @@ projectOne.addEventListener('click', hiding(event, '.project'));
 */
 
 projectOne.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectOne');
 })
 
 projectTwo.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectTwo');
 })
 
 projectThree.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectThree');
 })
 
 projectFour.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectFour');
 })
 
 projectFive.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectFive');
 })
 
 projectSix.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectSix');
 })
 
 projectSeven.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectSeven');
 })
 
 projectEight.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.projectEight');
 })
 
@@ -114,47 +114,48 @@ firstRight.addEventListener('click', event => {
     event.preventDefault();
     addDisplay('.first', '.second');
 })
+
 firstLeft.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.second', '.first');
 })
 
 aboutRight.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.second', '.about');
 })
 
 aboutLeft.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.about','.second');
 })
 
 projectsRight.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.second','.projects');
 })
 
 projectsLeft.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.projects', '.second');
 })
 
 technologyRight.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.second', '.technology');
 })
 
 technologyLeft.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.technology', '.second');
 })
 
 constactRight.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.second', '.contact');
 })
 
 contactLeft.addEventListener('click', event => {
-    event.preventDefault;
+    event.preventDefault();
     addDisplay('.contact', '.second');
 })
