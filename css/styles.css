@@ -110,9 +110,11 @@
   justify-content: space-around;
 }
 
+* body .about .box img {
+  width: 200px;
+}
+
 * body .about .box p {
-  padding: 20px;
-  width: 70%;
   font-size: 18px;
 }
 
@@ -312,9 +314,10 @@
   * body .second .second-row .box .arrowLeft {
     font-size: 30px;
   }
+  * body .about .box img {
+    width: 150px;
+  }
   * body .about .box p {
-    padding: 10px;
-    width: 70%;
     font-size: 12px;
   }
   * body .about .box .arrowLeftBig {
